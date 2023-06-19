@@ -1,0 +1,23 @@
+#include "main.h"
+
+char *_strcpy(char *dest, char *src)
+{
+  int len , i ;
+  char temp[98];
+  
+  i=0;
+  len = 0;
+  *temp = *dest;
+  while (dest[len]!= '\0')
+    {
+      temp[len]=dest[len];
+      len++;
+    }
+  while(src[i]!='\0')
+    {
+      temp[len]=src[i];
+      len++;
+      i++;
+    }
+  return (dest);
+}
